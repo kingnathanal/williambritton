@@ -22,12 +22,12 @@
               <div class="tag-line">I like techy things and I love to write code.</div>
               <div class="about-desc">
                 <p>
-                  I am a Software Engineer & DevOps Developer,
+                  I am a Systems Engineer & DevOps Advocate,
                   <br />based out of the Detroit area.
                   <br />
                   <br />
                   <a
-                    href="brittonresume2019.pdf"
+                    href="brittonresume-public.pdf"
                     target="_blank"
                     class="btn btn-outline-warning"
                   >Grab My Resume</a>
@@ -62,7 +62,7 @@
               alt="Vue logo"
               src="../assets/logo.png"
               class="vue-logo"
-            /> © 2020
+            /> © 2021
           </span>
         </div>
       </div>
@@ -133,11 +133,22 @@ export default {
       ],
       jobs: [
         {
-          name: "Sunsoft Technologies",
-          years: "2019 - current",
-          position: "Senior Software Engineer",
+          name: "General Motors",
+          years: "2020 - current",
+          position: "Systems Engineer",
           skills: [
-            "Software Developer for Detroit Diesel Mechatronics Engineering",
+            "Member of Connected Customer and Mobility Solutions Optimization team",
+            "Responsible for identifying, defining or architecting of platform and infrastructure changes and updates",
+            "Provides support on any architectural guidance and technical implementation to software development teams.",
+            "Understand GM security zones and firewall policies and make recommendations to improve firewall processes."
+          ]
+        },
+        {
+          name: "Detroit Diesel",
+          years: "2019 - 2020",
+          position: "Senior Software Engineer (Sunsoft Contractor)",
+          skills: [
+            "Software Developer for Mechatronics Engineering",
             "Spring MVC and Spring Boot application development",
             "Administration of DevOps toolchain: GitLab, Jenkins, Artifactory",
             "Docker with pipeline integration and deployment",
@@ -183,16 +194,6 @@ export default {
             "Java/J2EE development with Struts Framework",
             "Creation of JSP, HTML, CSS, Javascript web page elements",
             "JBoss application server administration"
-          ]
-        },
-        {
-          name: "Coca-Cola Enterprises",
-          years: "2004-2010",
-          position: "Large Store Account Manager",
-          skills: [
-            "Selling of new products and promotions",
-            "Management of store inventory levels",
-            "Product and Point of Sale placement"
           ]
         }
       ],

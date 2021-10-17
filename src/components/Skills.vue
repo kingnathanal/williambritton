@@ -8,9 +8,9 @@
         </span>
         <span class="font-weight-bold">I specialize in creating functional software solutions.</span>
         <br />
-        <br />I'm currently an Software Engineer. My work extends anywhere from website to desktop based applications.
-        Sometimes I also architect backend systems, everything from database designing, to application deployment,
-        containerization, operation administration and on-premise or cloud hosting. 
+        <br />Currently I am Systems Engineer with General Motors. My work experience extends anywhere from development of web to desktop based applications.
+        I play a role in architecting backend systems, while also diving into everything from database designing, Big Data reporting, triaging,
+        deployment planning, security administration and on-premise or cloud based hosting. Grab a copy of my resume for more details...
         <br />
         <br />I am currently looking for contributing opportunities in the open source community...
         <br />
