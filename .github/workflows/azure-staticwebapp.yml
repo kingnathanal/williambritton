@@ -43,7 +43,7 @@ jobs:
           submodules: true
       - name: npm install, build
         run: |
-          npm install
+          npm install --legacy-peer-deps
           npm run build
       - name: Build And Deploy
         id: builddeploy
