@@ -24,7 +24,7 @@
         >Check out my portfolio</a>
       </div>
       <div class="col-lg-4 col-sm-12 text-center">
-        <img alt="picture of a genius" src="../assets/me.jpg" class="me-logo" />
+        <img alt="picture of a genius" src="https://hyyercodesa.blob.core.windows.net/xpublic/me.jpg" class="me-logo" />
       </div>
     </div>
     <div class="row my-5">
@@ -49,22 +49,22 @@
 
 <script>
 export default {
-  name: "Skills",
+  name: 'SkillsPage',
   props: {
     skills: Array,
     badgecolors: Array
   },
   methods: {
-    getRandomBadgeColor() {
-      var rndnum = Math.floor(Math.random() * 7 + 1);
-      return this.badgecolors[rndnum];
+    getRandomBadgeColor () {
+      var rndnum = Math.floor(Math.random() * 7 + 1)
+      return this.badgecolors[rndnum]
     },
-    getRandomFontSize() {
-      var rndnum = Math.floor(Math.random() * 3 + 9);
-      return rndnum + "pt";
+    getRandomFontSize () {
+      var rndnum = Math.floor(Math.random() * 3 + 9)
+      return rndnum + 'pt'
     }
   }
-};
+}
 </script>
 
 <style>

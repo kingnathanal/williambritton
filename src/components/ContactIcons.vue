@@ -14,45 +14,45 @@
 
 <script>
 export default {
-  name: "ContactIcons",
-  data() {
+  name: 'ContactIcons',
+  data () {
     return {
-      iconClasses: "mx-2 icon-style",
+      iconClasses: 'mx-2 icon-style',
       contactItems: [
         {
-          title: "Photography Portfolio",
-          icontype: "fas",
-          iconname: "camera",
-          url: "http://www.nathanalphotography.com"
+          title: 'Photography Portfolio',
+          icontype: 'fas',
+          iconname: 'camera',
+          url: 'http://www.nathanalphotography.com'
         },
         {
-          title: "Github",
-          icontype: "fab",
-          iconname: "github",
-          url: "http://www.github.com/kingnathanal"
+          title: 'Github',
+          icontype: 'fab',
+          iconname: 'github',
+          url: 'http://www.github.com/kingnathanal'
         },
         {
-          title: "LinkedIn",
-          icontype: "fab",
-          iconname: "linkedin",
-          url: "http://linkedin.com/in/brittonwilliam"
+          title: 'LinkedIn',
+          icontype: 'fab',
+          iconname: 'linkedin',
+          url: 'http://linkedin.com/in/brittonwilliam'
         },
         {
-          title: "Instagram",
-          icontype: "fab",
-          iconname: "instagram",
-          url: "https://www.instagram.com/kingnathanal/"
+          title: 'Instagram',
+          icontype: 'fab',
+          iconname: 'instagram',
+          url: 'https://www.instagram.com/kingnathanal/'
         },
         {
-          title: "Email Me",
-          icontype: "fas",
-          iconname: "envelope",
-          url: "mailto:williambritton@outlook.com"
+          title: 'Email Me',
+          icontype: 'fas',
+          iconname: 'envelope',
+          url: 'mailto:williambritton@outlook.com'
         }
       ]
-    };
+    }
   }
-};
+}
 </script>
 
 <style>

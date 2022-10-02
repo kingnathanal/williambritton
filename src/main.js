@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 
 /**
- * The following is from including the font awesome library for icons 
+ * The following is from including the font awesome library for icons
  * usage: https://www.npmjs.com/package/@fortawesome/vue-fontawesome
  */
 import {

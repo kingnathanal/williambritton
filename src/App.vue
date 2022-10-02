@@ -8,21 +8,21 @@
     <transition name="view">
       <router-view />
     </transition>-->
-    <Main />
+    <FrontDoor />
   </div>
 </template>
 
 <script>
-//import NavBar from "./components/NavBar.vue";
-import Main from "./components/Main.vue";
+// import NavBar from "./components/NavBar.vue";
+import FrontDoor from './components/FrontDoor.vue'
 
 export default {
-  name: "app",
+  name: 'app',
   components: {
     // NavBar,
-    Main
+    FrontDoor
   }
-};
+}
 </script>
 
 <style>

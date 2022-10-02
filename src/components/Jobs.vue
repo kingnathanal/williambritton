@@ -26,11 +26,11 @@
 
 <script>
 export default {
-  name: "Jobs",
+  name: 'JobsPage',
   props: {
     jobs: Array
   }
-};
+}
 </script>
 
 <style>
