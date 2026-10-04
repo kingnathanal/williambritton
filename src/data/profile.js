@@ -7,9 +7,9 @@ export const contactLinks = [
 ]
 
 export const skills = {
-  'Cloud Platform': ['Microsoft Azure', 'AKS', 'Kubernetes', 'Istio', 'Azure Networking', 'Multi-tenant platforms'],
+  'Cloud Platform': ['Microsoft Azure', 'AKS', 'Google Cloud', 'GKE', 'Kubernetes', 'Istio', 'Azure Networking', 'Multi-tenant platforms'],
   'Infrastructure as Code': ['Terraform', 'Terragrunt', 'Go automation', 'NetBox IPAM', 'Infrastructure design'],
-  'Delivery & Reliability': ['GitHub Actions', 'Azure DevOps', 'ArgoCD', 'Datadog', 'Grafana', 'Prometheus'],
+  'Delivery & Reliability': ['GitHub Actions', 'Azure DevOps', 'ArgoCD', 'OpenTelemetry', 'Datadog', 'Grafana', 'Prometheus'],
   'Data & Integration': ['Azure Postgres', 'Event Hub', 'Service Bus', 'PostgreSQL', 'TimescaleDB'],
   'Application Engineering': ['Go', 'Python', 'Java', 'C#', 'TypeScript', 'Vue', 'React', '.NET'],
   'Research & Creative': ['AI/ML', 'Digital forensics', 'Technical writing', '3D printing', 'Photography']
@@ -21,7 +21,8 @@ export const experience = [
     years: 'Mar 2023 — Present',
     position: 'Staff Software Engineer',
     highlights: [
-      'Leads platform engineering strategy and delivery for Azure-based internal cloud platforms supporting 400+ microservices.',
+      'Leads platform engineering strategy and delivery for Azure-based internal cloud platforms supporting approximately 500 Azure services.',
+      'Delivered the initial multi-tenant GCP foundation with identity federation, GKE custom ComputeClasses, Argo tooling, OpenTelemetry, and Datadog.',
       'Drives Terraform, Terragrunt, and GitHub Actions standards that improve repeatability, auditability, and developer onboarding.',
       'Directs AKS operations, tenant enablement, service-mesh patterns, and resource optimization across multi-tenant environments.',
       'Implemented NetBox-backed IPAM automation with Terraform to standardize CIDR allocation for platform subnet provisioning.',
@@ -106,13 +107,15 @@ export const projects = [
   {
     name: 'Cloud Platform Engineering',
     summary:
-      'Azure-based internal platforms supporting 400+ microservices, with AKS operations, tenant enablement, platform guardrails, and developer onboarding.',
-    tags: ['Azure', 'AKS', 'Platform engineering']
+      'Azure-based internal platforms supporting approximately 500 Azure services, with AKS operations, tenant enablement, platform guardrails, and developer onboarding.',
+    foundation:
+      'Also delivered the initial multi-tenant GCP foundation: identity federation, GKE custom ComputeClasses, Argo tooling, OpenTelemetry, and Datadog.',
+    tags: ['Azure', 'AKS', 'GCP', 'GKE', 'Platform engineering']
   },
   {
     name: 'AI Anomaly Detection for Edge Network Failover',
     summary:
-      'An unsupervised ML observability system built on a six-node Raspberry Pi edge network; 1.09M telemetry rows, 67% faster detection, and automated MQTT failover.',
+      'Graduate research using lightweight unsupervised learning to detect gray failures in a six-node Raspberry Pi edge network, with telemetry collection and experimental MQTT-based mitigation.',
     tags: ['Python', 'AI/ML', 'MQTT']
   },
   {
@@ -128,4 +131,16 @@ export const projects = [
 ]
 
 export const bio =
-  'Will Britton is a Staff Software Engineer and technical leader. At General Motors, he leads cloud platform engineering for Azure-based internal platforms that support 400+ microservices. His work spans AKS, Terraform/Terragrunt, GitHub Actions, service mesh, NetBox-backed IPAM, observability, and developer enablement. Will completed an M.S. in Computer Science at Eastern Michigan University in 2026, with research focused on unsupervised machine learning for proactive gray-failure detection and automated failover in edge networks. Under the HyyerCode banner, he builds cloud-hosted applications, photography projects, 3D prints, technical demos, and diagrams that make complex systems easier to understand.'
+  'William Britton Jr is a Staff Software Engineer and technical leader. At General Motors, he leads cloud platform engineering for Azure-based internal platforms that support approximately 500 Azure services. His work spans AKS, Terraform/Terragrunt, GitHub Actions, service mesh, NetBox-backed IPAM, observability, and developer enablement. He also delivered an initial multi-tenant GCP foundation with identity federation, GKE custom ComputeClasses, Argo tooling, OpenTelemetry, and Datadog. Will completed an M.S. in Computer Science at Eastern Michigan University in 2026, with research focused on unsupervised machine learning for proactive gray-failure detection and automated failover in edge networks. Under the HyyerCode banner, he builds cloud-hosted applications, photography projects, 3D prints, technical demos, and diagrams that make complex systems easier to understand.'
+
+// Verified against the official ICMLA 2026 program on October 4, 2026.
+export const conferenceResearch = {
+  title: 'Detecting Gray Failures in Edge Networks with Lightweight Unsupervised Learning',
+  authors: 'William Britton and Ourania Spantidi',
+  status: 'Accepted to ICMLA 2026',
+  summary: 'Lightweight unsupervised learning for detecting subtle network degradation in edge environments, connecting graduate research with practical observability.',
+  presentation: 'October 6, 2026 · 10:20 a.m. Eastern · Ballroom C East',
+  session: 'Special Session 3A · Anomaly Detection in Complex and Evolving Systems',
+  programUrl: 'https://www.icmla-conference.org/icmla26/schedule.html',
+  paperListingUrl: 'https://www.icmla-conference.org/icmla26/ss3papers.html'
+}

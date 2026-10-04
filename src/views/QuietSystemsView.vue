@@ -2,6 +2,7 @@
 import {
   careerArc,
   contactLinks,
+  conferenceResearch,
   credentials,
   projects,
   skills,
@@ -25,13 +26,15 @@ const platformSkills = Object.entries(skills)
       <section class="hero section-rule">
         <div class="hero-copy">
           <p class="kicker">01 / Platform engineering</p>
-          <h1>I build systems the way I built my career: <em>with consistency.</em></h1>
+          <h1>William Britton Jr</h1>
+          <p class="hero-statement">I build systems the way I built my career: <em>with consistency.</em></p>
           <p class="intro">
             The road here included full-time work, family, and returning to school. I finished my
             M.S. in Computer Science by not quitting; today, I lead cloud-platform engineering at
-            General Motors for systems that support 400+ microservices.
+            General Motors for systems that support approximately 500 Azure services.
           </p>
           <div class="hero-links">
+            <a href="#icmla">ICMLA 2026 research ↓</a>
             <a :href="contactLinks[0].href" target="_blank" rel="noreferrer">LinkedIn ↗</a>
             <a :href="contactLinks[1].href" target="_blank" rel="noreferrer">GitHub ↗</a>
             <a :href="contactLinks[4].href" target="_blank" rel="noreferrer">Writing ↗</a>
@@ -50,9 +53,27 @@ const platformSkills = Object.entries(skills)
         </figure>
       </section>
 
+      <section id="icmla" class="conference section-rule" aria-labelledby="conference-title">
+        <div class="conference-intro">
+          <p class="kicker">02 / ICMLA 2026</p>
+          <p class="conference-status">{{ conferenceResearch.status }}</p>
+          <p class="conference-session">{{ conferenceResearch.session }}</p>
+        </div>
+        <article class="conference-paper">
+          <h2 id="conference-title">{{ conferenceResearch.title }}</h2>
+          <p class="conference-authors">{{ conferenceResearch.authors }}</p>
+          <p>{{ conferenceResearch.summary }}</p>
+          <p class="conference-time">{{ conferenceResearch.presentation }}</p>
+          <div class="hero-links">
+            <a :href="conferenceResearch.programUrl" target="_blank" rel="noreferrer">Official program ↗</a>
+            <a :href="conferenceResearch.paperListingUrl" target="_blank" rel="noreferrer">Accepted paper listing ↗</a>
+          </div>
+        </article>
+      </section>
+
       <section class="selected section-rule">
         <div class="section-label">
-          <p class="kicker">02 / Selected systems</p>
+          <p class="kicker">03 / Selected systems</p>
           <p>Architecture, automation, and the occasionally stubborn reality of production.</p>
         </div>
         <article v-for="(project, index) in platformProjects" :key="project.name" class="project-row">
@@ -60,6 +81,7 @@ const platformSkills = Object.entries(skills)
           <div>
             <h2>{{ project.name }}</h2>
             <p>{{ project.summary }}</p>
+            <p v-if="project.foundation" class="foundation-copy">{{ project.foundation }}</p>
           </div>
           <div class="project-tags">
             <span v-for="tag in project.tags" :key="tag">{{ tag }}</span>
@@ -69,7 +91,7 @@ const platformSkills = Object.entries(skills)
 
       <section class="enablement section-rule">
         <div class="enablement-copy">
-          <p class="kicker">03 / How I help teams move</p>
+          <p class="kicker">04 / How I help teams move</p>
           <h2>Good platform work makes the next right thing easier.</h2>
           <p>
             The goal is not to create another team everyone has to wait on. It is to build clear,
@@ -89,7 +111,7 @@ const platformSkills = Object.entries(skills)
 
       <section class="practice section-rule">
         <div class="practice-copy">
-          <p class="kicker">04 / Capabilities</p>
+          <p class="kicker">05 / Capabilities</p>
           <h2>Cloud platforms, automation, and the systems in between.</h2>
           <p>
             The working toolkit behind the platform work: infrastructure, delivery, application
@@ -107,7 +129,7 @@ const platformSkills = Object.entries(skills)
 
       <section class="career section-rule">
         <div class="career-intro">
-          <p class="kicker">05 / Career arc</p>
+          <p class="kicker">06 / Career arc</p>
           <h2>From building applications to shaping the platforms behind them.</h2>
         </div>
         <div class="career-list">
@@ -124,7 +146,7 @@ const platformSkills = Object.entries(skills)
 
       <section class="research section-rule">
         <div class="research-intro">
-          <p class="kicker">06 / Research, writing, & making</p>
+          <p class="kicker">07 / Research, writing, & making</p>
           <h2>The curiosity that feeds the day job.</h2>
           <p>
             Beyond platform engineering, I completed graduate research in unsupervised machine
@@ -148,9 +170,9 @@ const platformSkills = Object.entries(skills)
     </main>
 
     <footer>
-      <p>Will Britton / HyyerCode</p>
+      <p>William Britton Jr / HyyerCode</p>
       <p>Engineering systems. Building odd little ideas. Taking photos.</p>
-      <a href="/v1/">View the original site ↗</a>
+      <a :href="contactLinks[2].href">Get in touch ↗</a>
     </footer>
   </section>
 </template>
@@ -207,7 +229,8 @@ main { padding: 0 clamp(20px, 4vw, 64px); }
 h1, h2, h3, p { margin: 0; }
 h1, h2 { font-family: Manrope, Arial, sans-serif; font-weight: 600; }
 h1 { max-width: 650px; font-size: clamp(2.65rem, 4.5vw, 4.7rem); line-height: 1.04; letter-spacing: -0.055em; }
-h1 em { color: #567376; font-style: normal; }
+.hero-statement { max-width: 650px; margin-top: 20px; font-size: clamp(1.7rem, 2.5vw, 2.65rem); line-height: 1.12; letter-spacing: -0.035em; }
+.hero-statement em { color: #567376; font-style: normal; }
 .intro { max-width: 540px; margin-top: 22px; font-size: 1rem; line-height: 1.65; }
 
 .hero-links { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 24px; }
@@ -221,6 +244,17 @@ h1 em { color: #567376; font-style: normal; }
 .node.primary { min-height: 76px; background: var(--acid); color: var(--ink); border: none; }
 .node.primary span { color: #4f5c24; }
 figcaption { color: #afbbb7; font-size: 0.76rem; }
+
+.conference { display: grid; grid-template-columns: 0.7fr 1fr; gap: 40px; padding: clamp(36px, 5vw, 64px) 0; scroll-margin-top: 24px; }
+.conference-status { display: inline-block; margin: 16px 0; padding: 8px 10px; background: var(--acid); font-size: 0.85rem; font-weight: 700; }
+.conference-session { max-width: 340px; color: #526563; font-size: 0.9rem; line-height: 1.6; }
+.conference-paper h2 { font-size: clamp(1.7rem, 2.6vw, 2.7rem); line-height: 1.12; letter-spacing: -0.035em; }
+.conference-paper > p { margin-top: 16px; line-height: 1.65; }
+.conference-authors { font-weight: 600; }
+.conference-time { font-size: 0.92rem; font-weight: 700; }
+.foundation-copy { max-width: 630px; margin-top: 14px; line-height: 1.55; }
+a:focus-visible { outline: 2px solid var(--ink); outline-offset: 5px; }
+footer a:focus-visible { outline-color: var(--acid); }
 
 .selected { padding: 34px 0 14px; }
 .section-label { display: grid; grid-template-columns: 0.7fr 1fr; gap: 24px; margin-bottom: 36px; }
@@ -271,7 +305,7 @@ footer a { color: inherit; text-decoration: none; border-bottom: 1px solid var(-
 @media (max-width: 760px) {
   .site-header, footer { flex-wrap: wrap; }
   .site-header p { order: 3; width: 100%; }
-  .hero, .enablement, .practice, .career-intro, .research { grid-template-columns: 1fr; }
+  .hero, .conference, .enablement, .practice, .career-intro, .research { grid-template-columns: 1fr; }
   .section-label { grid-template-columns: 1fr; }
   .project-row { grid-template-columns: 34px 1fr; }
   .project-tags { grid-column: 2; }
