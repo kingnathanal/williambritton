@@ -113,12 +113,6 @@ export const projects = [
     tags: ['Azure', 'AKS', 'GCP', 'GKE', 'Platform engineering']
   },
   {
-    name: 'AI Anomaly Detection for Edge Network Failover',
-    summary:
-      'Graduate research using lightweight unsupervised learning to detect gray failures in a six-node Raspberry Pi edge network, with telemetry collection and experimental MQTT-based mitigation.',
-    tags: ['Python', 'AI/ML', 'MQTT']
-  },
-  {
     name: 'Nathanal.com Azure Migration',
     summary: 'Moved the photography portfolio from Squarespace to Azure Static Web Apps, Functions, Blob Storage, Terraform, GitHub Actions, and React/TypeScript.',
     tags: ['Azure', 'React', 'Terraform']
@@ -138,7 +132,7 @@ export const conferenceResearch = {
   title: 'Detecting Gray Failures in Edge Networks with Lightweight Unsupervised Learning',
   authors: 'William Britton and Ourania Spantidi',
   status: 'Accepted to ICMLA 2026',
-  summary: 'Lightweight unsupervised learning for detecting subtle network degradation in edge environments, connecting graduate research with practical observability.',
+  summary: 'My graduate research uses lightweight unsupervised learning to detect gray failures in a six-node Raspberry Pi edge network, with telemetry collection and experimental MQTT-based mitigation.',
   presentation: 'October 6, 2026 · 10:20 a.m. Eastern · Ballroom C East',
   session: 'Special Session 3A · Anomaly Detection in Complex and Evolving Systems',
   programUrl: 'https://www.icmla-conference.org/icmla26/schedule.html',

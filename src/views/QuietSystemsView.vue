@@ -9,8 +9,8 @@ import {
   teamEnablement
 } from '../data/profile'
 
-const platformProjects = projects.slice(0, 3)
-const researchProjects = projects.slice(1)
+const platformProjects = projects.slice(0, 2)
+const sideProjects = projects.slice(1)
 const platformSkills = Object.entries(skills)
 </script>
 
@@ -27,11 +27,10 @@ const platformSkills = Object.entries(skills)
         <div class="hero-copy">
           <p class="kicker">01 / Platform engineering</p>
           <h1>William Britton Jr</h1>
-          <p class="hero-statement">I build systems the way I built my career: <em>with consistency.</em></p>
           <p class="intro">
-            The road here included full-time work, family, and returning to school. I finished my
-            M.S. in Computer Science by not quitting; today, I lead cloud-platform engineering at
-            General Motors for systems that support approximately 500 Azure services.
+            I'm a Staff Software Engineer at General Motors, focused on cloud platforms, distributed
+            systems, and reliability. I work on internal platforms supporting approximately 500 Azure
+            services. I earned an M.S. in Computer Science at Eastern Michigan University.
           </p>
           <div class="hero-links">
             <a href="#icmla">ICMLA 2026 research ↓</a>
@@ -146,17 +145,16 @@ const platformSkills = Object.entries(skills)
 
       <section class="research section-rule">
         <div class="research-intro">
-          <p class="kicker">07 / Research, writing, & making</p>
+          <p class="kicker">07 / Writing & making</p>
           <h2>The curiosity that feeds the day job.</h2>
           <p>
-            Beyond platform engineering, I completed graduate research in unsupervised machine
-            learning for gray-failure detection and build small systems that connect cloud,
-            automation, and visual storytelling.
+            Beyond platform engineering, I build small systems that connect cloud, automation,
+            and visual storytelling.
           </p>
           <a :href="contactLinks[4].href" target="_blank" rel="noreferrer">Read on Medium ↗</a>
         </div>
         <div class="research-content">
-          <article v-for="project in researchProjects" :key="project.name" class="research-project">
+          <article v-for="project in sideProjects" :key="project.name" class="research-project">
             <p>{{ project.tags.join(' · ') }}</p>
             <h3>{{ project.name }}</h3>
             <p>{{ project.summary }}</p>
@@ -229,8 +227,6 @@ main { padding: 0 clamp(20px, 4vw, 64px); }
 h1, h2, h3, p { margin: 0; }
 h1, h2 { font-family: Manrope, Arial, sans-serif; font-weight: 600; }
 h1 { max-width: 650px; font-size: clamp(2.65rem, 4.5vw, 4.7rem); line-height: 1.04; letter-spacing: -0.055em; }
-.hero-statement { max-width: 650px; margin-top: 20px; font-size: clamp(1.7rem, 2.5vw, 2.65rem); line-height: 1.12; letter-spacing: -0.035em; }
-.hero-statement em { color: #567376; font-style: normal; }
 .intro { max-width: 540px; margin-top: 22px; font-size: 1rem; line-height: 1.65; }
 
 .hero-links { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 24px; }
