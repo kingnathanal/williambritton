@@ -1,4 +1,5 @@
 <script setup>
+import ProjectShowcase from '../components/ProjectShowcase.vue'
 import {
   careerArc,
   contactLinks,
@@ -34,6 +35,7 @@ const platformSkills = Object.entries(skills)
           </p>
           <div class="hero-links">
             <a href="#icmla">ICMLA 2026 research ↓</a>
+            <a href="#projects">Projects ↓</a>
             <a :href="contactLinks[0].href" target="_blank" rel="noreferrer">LinkedIn ↗</a>
             <a :href="contactLinks[1].href" target="_blank" rel="noreferrer">GitHub ↗</a>
             <a :href="contactLinks[4].href" target="_blank" rel="noreferrer">Writing ↗</a>
@@ -165,6 +167,7 @@ const platformSkills = Object.entries(skills)
           </div>
         </div>
       </section>
+      <ProjectShowcase />
     </main>
 
     <footer>
