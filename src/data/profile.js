@@ -1,18 +1,21 @@
 export const contactLinks = [
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/brittonwilliam/' },
   { label: 'GitHub', href: 'https://github.com/kingnathanal' },
-  { label: 'Email', href: 'mailto:will@nathanal.com' },
+  { label: 'Email', href: 'mailto:will.nathanal@gmail.com' },
   { label: 'Photography', href: 'https://nathanal.com/' },
   { label: 'Medium', href: 'https://medium.com/@kingnathanal' }
 ]
 
+export const professionalSummary =
+  "I'm a Staff Software Engineer and technical lead at General Motors, with 16+ years across software engineering, production operations, and platform engineering. I lead Atmos compute and networking work for shared Azure infrastructure supporting approximately 490 onboarded teams. My DevOps experience dates to 2013, and I hold an M.S. in Computer Science from Eastern Michigan University."
+
 export const skills = {
-  'Cloud Platform': ['Microsoft Azure', 'AKS', 'Google Cloud', 'GKE', 'Kubernetes', 'Istio', 'Azure Networking', 'Multi-tenant platforms'],
-  'Infrastructure as Code': ['Terraform', 'Terragrunt', 'Go automation', 'NetBox IPAM', 'Infrastructure design'],
-  'Delivery & Reliability': ['GitHub Actions', 'Azure DevOps', 'ArgoCD', 'OpenTelemetry', 'Datadog', 'Grafana', 'Prometheus'],
-  'Data & Integration': ['Azure Postgres', 'Event Hub', 'Service Bus', 'PostgreSQL', 'TimescaleDB'],
-  'Application Engineering': ['Go', 'Python', 'Java', 'C#', 'TypeScript', 'Vue', 'React', '.NET'],
-  'Research & Creative': ['AI/ML', 'Digital forensics', 'Technical writing', '3D printing', 'Photography']
+  'Cloud & orchestration': ['Azure', 'AKS', 'GCP', 'GKE', 'Kubernetes', 'Karpenter', 'Istio', 'Docker'],
+  'Infrastructure & delivery': ['Terraform', 'Terragrunt', 'Azure DevOps', 'GitHub Actions', 'Argo CD', 'GitOps'],
+  'Networking & security': ['Cloud networking', 'Istio ingress', 'DNS A records', 'IPAM', 'NetBox', 'Enterprise network policies'],
+  'Reliability & observability': ['Compute & network SLOs', 'OpenTelemetry', 'Datadog', 'Prometheus', 'Grafana', 'Cluster health checks', 'Automated remediation'],
+  'Languages & data': ['Python', 'Go', 'Java', 'SQL', 'PostgreSQL', 'TimescaleDB', 'Databricks', 'Synapse'],
+  'Personal & research': ['AWS EC2', 'Gray-failure detection', 'Edge networks', 'MCP', 'Photography']
 }
 
 export const experience = [
@@ -21,12 +24,13 @@ export const experience = [
     years: 'Mar 2023 — Present',
     position: 'Staff Software Engineer',
     highlights: [
-      'Leads platform engineering strategy and delivery for Azure-based internal cloud platforms supporting approximately 500 Azure services.',
+      'Technical lead for the Atmos compute and networking team, guiding shared Azure infrastructure supporting approximately 490 onboarded teams. Partners with tenants to resolve migration blockers and build reusable infrastructure and self-service capabilities.',
       'Delivered the initial multi-tenant GCP foundation with identity federation, GKE custom ComputeClasses, Argo tooling, OpenTelemetry, and Datadog.',
-      'Drives Terraform, Terragrunt, and GitHub Actions standards that improve repeatability, auditability, and developer onboarding.',
-      'Directs AKS operations, tenant enablement, service-mesh patterns, and resource optimization across multi-tenant environments.',
-      'Implemented NetBox-backed IPAM automation with Terraform to standardize CIDR allocation for platform subnet provisioning.',
-      'Recognized with the General Motors Critical Technical Talent Award for exceptional technical impact and individual performance.'
+      'Implemented Karpenter-based self-service node pools for GPU and specialized workloads; manages AKS operations and Istio ingress within enterprise security and network policies.',
+      'Defines Terraform and Terragrunt standards, Azure DevOps and GitHub Actions pipelines, and Argo CD GitOps deployment patterns.',
+      'Helps define compute and network SLOs and platform observability with OpenTelemetry and Datadog; builds cluster health checks that trigger automated remediation.',
+      'Implemented self-service DNS A-record provisioning and automated subnet CIDR allocation with NetBox and Terraform.',
+      'Mentors engineers through technical demonstrations, game days, and hands-on troubleshooting. Received the General Motors Critical Technical Talent Award.'
     ]
   },
   {
@@ -34,19 +38,20 @@ export const experience = [
     years: 'Sep 2020 — Mar 2023',
     position: 'Solution Architect / System Engineer',
     highlights: [
-      'Coordinated IT initiatives for 50+ application teams, providing architectural guidance, compliance support, and delivery alignment.',
-      'Delivered executive-level reporting on compliance, technology debt, risk posture, and modernization progress.',
-      'Drove critical security and vulnerability remediation initiatives and completed a Layer7 to Azure API Management migration ahead of deadline.'
+      'Coordinated infrastructure and modernization initiatives for 50+ application teams, aligning architects, product owners, security leads, and developers on requirements and delivery.',
+      'Drove security remediation and operating-system and middleware compliance work; reported risk and technology debt to directors and CIO stakeholders.',
+      'Designed and supported a Microsoft Dynamics CRM implementation and completed the Layer7 to Azure API Management migration ahead of deadline.'
     ]
   },
   {
-    name: 'Detroit Diesel / SunSoft Technologies / DXC Technology',
+    name: 'Detroit Diesel',
+    context: 'Contractor through SunSoft Technologies and DXC Technology',
     years: 'Nov 2014 — Sep 2020',
     position: 'Senior Software Engineer',
     highlights: [
       'Served as technical lead for a server application team, providing architecture, training, release support, and engineering leadership.',
-      'Architected Java, Spring MVC, and Spring Boot application and microservice delivery flows across tooling, deployment, and release management.',
-      'Developed Jenkins pipelines for Docker container deployments and WebSphere releases while supporting critical mechatronics engineering applications.'
+      'Architected Java, Spring MVC, and Spring Boot applications and delivery flows for server systems supporting mechatronics engineering emissions data.',
+      'Built Jenkins pipelines for Docker and WebSphere deployments; administered Jenkins, GitLab, Artifactory, SonarQube, and AppDynamics on SUSE Linux.'
     ]
   }
 ]
@@ -55,44 +60,35 @@ export const teamEnablement = [
   {
     title: 'Make the path legible',
     description:
-      'Partner with application teams through architecture reviews, roadshows, office hours, and practical onboarding—not a PDF someone finds six months too late.'
+      'Partner with tenant teams through architecture reviews, onboarding, roadshows, and office hours; resolve infrastructure issues that block migrations and delivery.'
   },
   {
     title: 'Build better defaults',
     description:
-      'Turn repeatable platform work into standards with Terraform, Terragrunt, GitHub Actions, and NetBox-backed IPAM automation.'
+      'Build reusable infrastructure patterns, self-service compute and DNS provisioning, and consistent Terraform, Terragrunt, and GitOps delivery practices.'
   },
   {
     title: 'Grow shared judgment',
     description:
-      'Use technical demos, tabletop discussions, game days, and mentorship to make teams more capable when the obvious answer is not available.'
+      'Mentor engineers through technical demonstrations, tabletop discussions, game days, and hands-on troubleshooting.'
   }
 ]
 
-export const careerArc = [
+export const earlierExperience = [
   {
-    years: '2023 — Present',
-    role: 'Staff Software Engineer',
-    company: 'General Motors',
-    focus: 'Cloud platform engineering, developer enablement, and technical strategy.'
+    years: 'Jul 2013 — Oct 2014',
+    role: 'Operations Administrator / DevOps .NET Developer',
+    company: 'Covisint'
   },
   {
-    years: '2020 — 2023',
-    role: 'Solution Architect / System Engineer',
-    company: 'General Motors',
-    focus: 'Architecture, security remediation, and delivery alignment for 50+ application teams.'
+    years: 'Sep 2011 — Jul 2013',
+    role: 'Service Information Developer II',
+    company: 'Hewlett Packard'
   },
   {
-    years: '2014 — 2020',
-    role: 'Senior Software Engineer',
-    company: 'Detroit Diesel / SunSoft Technologies / DXC Technology',
-    focus: 'Java and Spring systems, DevOps tooling, release engineering, and mechatronics data.'
-  },
-  {
-    years: '2010 — 2014',
-    role: 'Developer / Operations Engineer',
-    company: 'State of Michigan, Hewlett Packard, and Covisint',
-    focus: 'Full-stack development, production operations, databases, and the foundations of DevOps.'
+    years: 'Jun 2010 — Sep 2011',
+    role: 'Junior Java/J2EE Developer (student)',
+    company: 'State of Michigan'
   }
 ]
 
@@ -103,21 +99,12 @@ export const credentials = [
   'M.S. Computer Science · Eastern Michigan University · 2026'
 ]
 
-export const projects = [
-  {
-    name: 'Cloud Platform Engineering',
-    summary:
-      'Azure-based internal platforms supporting approximately 500 Azure services, with AKS operations, tenant enablement, platform guardrails, and developer onboarding.',
-    foundation:
-      'Also delivered the initial multi-tenant GCP foundation: identity federation, GKE custom ComputeClasses, Argo tooling, OpenTelemetry, and Datadog.',
-    tags: ['Azure', 'AKS', 'GCP', 'GKE', 'Platform engineering']
-  },
-  {
-    name: 'Nathanal.com Azure Migration',
-    summary: 'Moved the photography portfolio from Squarespace to Azure Static Web Apps, Functions, Blob Storage, Terraform, GitHub Actions, and React/TypeScript.',
-    tags: ['Azure', 'React', 'Terraform']
-  }
-]
+export const photographyProject = {
+  name: 'Nathanal.com',
+  summary:
+    'My photography portfolio, migrated from Squarespace to Azure Static Web Apps with React/TypeScript, a Python Azure Functions API, and Blob Storage. Infrastructure and deployments are automated with Terraform and GitHub Actions.',
+  tags: ['Photography', 'Azure', 'React', 'Terraform']
+}
 
 export const personalProjects = [
   {
@@ -153,14 +140,14 @@ export const personalProjects = [
 ]
 
 export const bio =
-  'William Britton Jr is a Staff Software Engineer and technical leader. At General Motors, he leads cloud platform engineering for Azure-based internal platforms that support approximately 500 Azure services. His work spans AKS, Terraform/Terragrunt, GitHub Actions, service mesh, NetBox-backed IPAM, observability, and developer enablement. He also delivered an initial multi-tenant GCP foundation with identity federation, GKE custom ComputeClasses, Argo tooling, OpenTelemetry, and Datadog. Will completed an M.S. in Computer Science at Eastern Michigan University in 2026, with research focused on unsupervised machine learning for proactive gray-failure detection and automated failover in edge networks. Under the HyyerCode banner, he builds cloud-hosted applications, photography projects, 3D prints, technical demos, and diagrams that make complex systems easier to understand.'
+  'William Britton Jr is a Staff Software Engineer with 16+ years across software engineering, production operations, and platform engineering, including DevOps experience dating to 2013. At General Motors, he is technical lead for Atmos compute and networking, guiding shared Azure infrastructure supporting approximately 490 onboarded teams. He delivered the initial multi-tenant GCP foundation. His work includes Kubernetes, self-service compute and networking, infrastructure as code, GitOps, observability, and tenant enablement. He completed an M.S. in Computer Science at Eastern Michigan University, with gray-failure detection research accepted to ICMLA 2026 and pending publication. AWS EC2 experience comes from personal and research projects.'
 
 // Verified against the official ICMLA 2026 program on October 4, 2026.
 export const conferenceResearch = {
   title: 'Detecting Gray Failures in Edge Networks with Lightweight Unsupervised Learning',
   authors: 'William Britton and Ourania Spantidi',
-  status: 'Accepted to ICMLA 2026',
-  summary: 'My graduate research uses lightweight unsupervised learning to detect gray failures in a six-node Raspberry Pi edge network, with telemetry collection and experimental MQTT-based mitigation.',
+  status: 'Accepted · Publication pending',
+  summary: 'My graduate research uses lightweight unsupervised learning to detect gray failures in a six-node Raspberry Pi edge network, with Python telemetry agents, an AWS EC2 control plane, and experimental MQTT-based mitigation.',
   presentation: 'October 6, 2026 · 10:20 a.m. Eastern · Ballroom C East',
   session: 'Special Session 3A · Anomaly Detection in Complex and Evolving Systems',
   programUrl: 'https://www.icmla-conference.org/icmla26/schedule.html',
