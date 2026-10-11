@@ -6,7 +6,7 @@ import { personalProjects } from '../data/profile'
   <section id="projects" class="projects-showcase" aria-labelledby="projects-title">
     <div class="projects-heading">
       <div>
-        <p class="projects-kicker">08 / Projects</p>
+        <p class="projects-kicker">07 / Projects</p>
         <h2 id="projects-title">Small tools.<br />Personal curiosity.</h2>
       </div>
       <p class="projects-intro">
@@ -119,7 +119,7 @@ import { personalProjects } from '../data/profile'
 
 .projects-kicker {
   margin: 0 0 20px;
-  color: #526563;
+  color: var(--muted);
   letter-spacing: 0.12em;
 }
 
@@ -148,20 +148,23 @@ import { personalProjects } from '../data/profile'
   grid-template-rows: auto 1fr;
   min-width: 0;
   border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--surface);
 }
 
 .project-art {
   padding: 16px 18px 0;
-  color: #e8ebe1;
-  background: var(--ink);
+  color: var(--ink);
+  background: var(--surface-raised);
 }
 
 .project-art-freshlybudgets {
-  background: #32483f;
+  background: #12334c;
 }
 
 .project-art-bookshelf {
-  background: #384848;
+  background: #1a2b43;
 }
 
 .art-label {
@@ -178,36 +181,36 @@ import { personalProjects } from '../data/profile'
 }
 
 .art-outline {
-  stroke: #afbbb7;
+  stroke: var(--muted);
   stroke-width: 1.5;
 }
 
 .art-accent {
-  fill: var(--acid);
+  fill: var(--accent);
 }
 
 .art-muted {
-  fill: #afbbb7;
+  fill: var(--muted);
 }
 
 .art-soft {
-  fill: #657b6b;
+  fill: #386385;
 }
 
 .art-bar {
-  stroke: #32483f;
+  stroke: var(--accent-ink);
   stroke-width: 2;
 }
 
 .art-check {
-  stroke: var(--acid);
+  stroke: var(--accent);
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
 .terminal-command {
-  fill: #e8ebe1;
+  fill: var(--ink);
   font:
     13px ui-monospace,
     SFMono-Regular,
@@ -223,7 +226,7 @@ import { personalProjects } from '../data/profile'
 
 .project-category {
   margin: 0 0 10px;
-  color: #526563;
+  color: var(--muted);
   font-size: 0.62rem;
 }
 
@@ -237,7 +240,7 @@ import { personalProjects } from '../data/profile'
 
 .personal-project-summary {
   margin: 16px 0 0;
-  color: #526563;
+  color: var(--muted);
   font-size: 0.92rem;
   line-height: 1.65;
 }
@@ -270,7 +273,7 @@ import { personalProjects } from '../data/profile'
 
 .project-availability {
   margin: 0;
-  color: #526563;
+  color: var(--muted);
   font-size: 0.6rem;
   letter-spacing: 0.05em;
 }
@@ -290,11 +293,11 @@ import { personalProjects } from '../data/profile'
 }
 
 .project-footer a:hover {
-  color: #455f40;
+  color: var(--accent);
 }
 
 .project-footer a:focus-visible {
-  outline: 2px solid var(--ink);
+  outline: 2px solid var(--accent);
   outline-offset: 5px;
 }
 
