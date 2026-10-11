@@ -116,11 +116,39 @@ export const projects = [
     name: 'Nathanal.com Azure Migration',
     summary: 'Moved the photography portfolio from Squarespace to Azure Static Web Apps, Functions, Blob Storage, Terraform, GitHub Actions, and React/TypeScript.',
     tags: ['Azure', 'React', 'Terraform']
+  }
+]
+
+export const personalProjects = [
+  {
+    id: 'freshlybudgets',
+    name: 'Freshly Budgets',
+    category: 'Personal finance',
+    summary:
+      'An early-access household budgeting app for tracking budgets, expenses, bills, debts, and savings goals, with family sharing, spending reports, CSV imports, and a budget assistant.',
+    tags: ['React', 'TypeScript', 'FastAPI', 'PostgreSQL', 'AWS'],
+    availability: 'Early access',
+    links: [{ label: 'Explore Freshly Budgets', href: 'https://freshlybudget.com/' }]
   },
   {
-    name: 'pictl Platform CLI',
-    summary: 'A Go-based command-line utility concept for platform operations and Kubernetes-focused automation workflows.',
-    tags: ['Go', 'Kubernetes', 'Automation']
+    id: 'pictl',
+    name: 'pictl',
+    category: 'Raspberry Pi fleet CLI',
+    summary:
+      'A Go learning project for managing Raspberry Pis over SSH. Brings reachability checks, system metrics, health checks, package updates, and remote command execution into one CLI.',
+    tags: ['Go', 'Cobra', 'SSH', 'Raspberry Pi'],
+    availability: 'Hobby project',
+    links: [{ label: 'View code', href: 'https://github.com/kingnathanal/pictl' }]
+  },
+  {
+    id: 'bookshelf',
+    name: 'Bookshelf MCP',
+    category: 'Technical reference search',
+    summary:
+      'A personal research tool that connects AI assistants to technical PDFs through MCP. Combines keyword and semantic search to return relevant passages with book, page, and section references.',
+    tags: ['Python', 'FastMCP', 'PostgreSQL', 'pgvector', 'Ollama'],
+    availability: 'Private personal project',
+    links: []
   }
 ]
 
