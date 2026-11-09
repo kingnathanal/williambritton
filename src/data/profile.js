@@ -140,16 +140,17 @@ export const personalProjects = [
 ]
 
 export const bio =
-  'William Britton Jr is a Staff Software Engineer with 16+ years across software engineering, production operations, and platform engineering, including DevOps experience dating to 2013. At General Motors, he is technical lead for Atmos compute and networking, guiding shared Azure infrastructure supporting approximately 490 onboarded teams. He delivered the initial multi-tenant GCP foundation. His work includes Kubernetes, self-service compute and networking, infrastructure as code, GitOps, observability, and tenant enablement. He completed an M.S. in Computer Science at Eastern Michigan University, with gray-failure detection research accepted to ICMLA 2026 and pending publication. AWS EC2 experience comes from personal and research projects.'
+  'William Britton Jr is a Staff Software Engineer with 16+ years across software engineering, production operations, and platform engineering, including DevOps experience dating to 2013. At General Motors, he is technical lead for Atmos compute and networking, guiding shared Azure infrastructure supporting approximately 490 onboarded teams. He delivered the initial multi-tenant GCP foundation. His work includes Kubernetes, self-service compute and networking, infrastructure as code, GitOps, observability, and tenant enablement. He completed an M.S. in Computer Science at Eastern Michigan University, with gray-failure detection research published in IEEE Xplore for ICMLA 2026. AWS EC2 experience comes from personal and research projects.'
 
 // Verified against the official ICMLA 2026 program on October 4, 2026.
 export const conferenceResearch = {
   title: 'Detecting Gray Failures in Edge Networks with Lightweight Unsupervised Learning',
   authors: 'William Britton and Ourania Spantidi',
-  status: 'Accepted · Publication pending',
+  status: 'Published in IEEE Xplore',
   summary: 'My graduate research uses lightweight unsupervised learning to detect gray failures in a six-node Raspberry Pi edge network, with Python telemetry agents, an AWS EC2 control plane, and experimental MQTT-based mitigation.',
   presentation: 'October 6, 2026 · 10:20 a.m. Eastern · Ballroom C East',
   session: 'Special Session 3A · Anomaly Detection in Complex and Evolving Systems',
   programUrl: 'https://www.icmla-conference.org/icmla26/schedule.html',
-  paperListingUrl: 'https://www.icmla-conference.org/icmla26/ss3papers.html'
+  paperListingUrl: 'https://www.icmla-conference.org/icmla26/ss3papers.html',
+  publicationUrl: 'https://ieeexplore.ieee.org/abstract/document/11760980'
 }

@@ -56,6 +56,7 @@ const platformSkills = Object.entries(skills)
           <p>{{ conferenceResearch.summary }}</p>
           <p class="conference-time">{{ conferenceResearch.presentation }}</p>
           <div class="hero-links">
+            <a :href="conferenceResearch.publicationUrl" target="_blank" rel="noreferrer">Read paper on IEEE Xplore ↗</a>
             <a :href="conferenceResearch.programUrl" target="_blank" rel="noreferrer">Official program ↗</a>
             <a :href="conferenceResearch.paperListingUrl" target="_blank" rel="noreferrer">Accepted paper listing ↗</a>
           </div>
